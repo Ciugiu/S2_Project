@@ -1,0 +1,29 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  width: 100px; /* Square dimensions */
+  height: 100px; /* Square dimensions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  position: absolute; /* Position it over the form */
+  background-color: #fff; /* Optional: for visibility against the form background */
+  border: 1px solid red; /* Optional: to highlight the square */
+}
+
+form {
+  z-index: auto; /* Ensure the error message is visible above the form */
+}
+
+input[type="submit"] {
+  margin: 0 auto; /* Centers the submit button */
+  display: block; /* Necessary for margin auto to work */
+}
