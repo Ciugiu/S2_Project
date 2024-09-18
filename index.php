@@ -1,16 +1,21 @@
 <?php
 $errorMessage = '';
 if (isset($_GET['Err'])) {
-    $errorMessage = 'Login failed';
+    $errorMessage = 'Login failed ';
 }
 
 ?>
 <html>
-<head><link rel="stylesheet" href="login_style.css"></head>
+
+<head>
+    <link rel="stylesheet" href="css/index_style.css">
+    <title>Login</title>
+</head>
+
 <body>
     <div style="color: red;"><?php echo $errorMessage; ?></div>
     <br>
-    <form method="post" action="login_action.php">
+    <form method="post" action="index_action.php">
         <fieldset>
             <br>
             <div style="text-align: center;">
@@ -28,4 +33,4 @@ if (isset($_GET['Err'])) {
     </form>
 </body>
 
-</html> 
+</html>
